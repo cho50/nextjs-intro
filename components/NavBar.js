@@ -41,7 +41,7 @@ export default function NavBar() {
                                 display: flex;
                                 gap: 10px;
                             }
-                       `}
+                        `}
             </style>
         </nav>
     );
