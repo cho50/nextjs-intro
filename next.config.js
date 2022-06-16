@@ -25,11 +25,11 @@ const nextConfig = {
       },
       {
         source: "/api/articles",
-        destination: `http://127.0.0.1:8000/api/articles`,
+        destination: `http://127.0.0.1:3000/api/articles`,
       },
       {
         source: "/api/members",
-        destination: `http://127.0.0.1:8000/api/members`,
+        destination: `http://127.0.0.1:3000/api/members`,
       },
     ];
   },
