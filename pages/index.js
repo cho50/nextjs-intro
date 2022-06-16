@@ -60,8 +60,11 @@ export default function Home({ results }) {
   );
 }
 
+const API_KEY = process.env.API_KEY;
+
 export async function getServerSideProps() {
-  const { results } = await (await fetch(`http://localhost:3000/api/movies`)).json();
+  // const { results } = await (await fetch(`http://localhost:3000/api/movies`)).json();
+  const { results } = await (await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)).json();
   return {
     props: {
       results,
